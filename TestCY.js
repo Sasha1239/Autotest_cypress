@@ -1,7 +1,7 @@
 describe('Try test', function () {
     it('Open start page', function () {
-            cy.visit('https://skdf-s-qa.ckr-sota.ru')
-            cy.xpath('//span[text()="Вход для специалисто"]').click() 
+            cy.visit('https://тест.скдф.рф/')
+            cy.get('//span[text()="Вход для специалистов"]').click() 
            
     })
 })
