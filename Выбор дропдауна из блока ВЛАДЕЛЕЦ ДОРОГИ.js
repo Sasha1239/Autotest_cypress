@@ -13,6 +13,6 @@ describe('Try test', function () {
             cy.xpath('//div/span[text()="Редактировать"]').click()
             cy.xpath('//h2[text()="Владелец дороги"]').click()
             cy.xpath('//div[@class="krkn__multi-dropdown__placeholder" and text()="Владелец"]').click()
-            cy.xpath('//span[@class="krkn__multi-dropdown__option-text" and text()="Акционерное общество "Уралэлектромедь""]').click({force: true})     
+            cy.xpath('//span[@class="krkn__multi-dropdown__option-text" and text()="Aкционерное общество "Уралэлектромедь""]').click({force: true})     
     })
 })
