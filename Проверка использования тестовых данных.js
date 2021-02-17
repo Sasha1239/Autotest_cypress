@@ -1,6 +1,8 @@
 describe('Try test', function () {
     it('Open start page', function () {
-        cy.fixture('Вход в СКДФ, ТЕСТ.js')
+        cy.fixture('Вход в СКДФ, ТЕСТ.js').then(function (data) {
+            this.data = data;
+        })
         cy.xpath('//div[text()="Цифровая база"]').click()
         cy.xpath('//div//span[@class="krkn__link krkn__nested-dropdown__option-text" and text()="Дороги"]').click()
         cy.xpath('//div/a[@href="/roads/32197941"]').click()
