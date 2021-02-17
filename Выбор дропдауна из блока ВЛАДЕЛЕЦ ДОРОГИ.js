@@ -14,7 +14,7 @@ describe('Try test', function () {
             cy.xpath('//h2[text()="Владелец дороги"]').click()
             cy.xpath('//div[@class="krkn__multi-dropdown__placeholder" and text()="Владелец"]').click()
             cy.wait(1000)
-            cy.xpath('//span[@class="krkn__multi-dropdown__option-text" and text()="Aкционерное общество "Уралэлектромедь""]').click({force: true}) 
+            cy.contains('Aкционерное общество "Уралэлектромедь"').click({force: true})
                
     })
 })
