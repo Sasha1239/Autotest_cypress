@@ -1,9 +1,9 @@
 describe('Try test', function () {
-    beforeEach(function () {
-        cy.fixture('fixture')
-            .then((fixture) => {
-            this.fixture = fixture
-            })
+    it('Open start page', function () {
+            cy.fixture('fixture')
+                .then((fixture) => {
+                this.fixture = fixture
+                })
         cy.xpath('//div[text()="Цифровая база"]').click()
         cy.xpath('//div//span[@class="krkn__link krkn__nested-dropdown__option-text" and text()="Дороги"]').click()
         cy.xpath('//div/a[@href="/roads/32197941"]').click()
